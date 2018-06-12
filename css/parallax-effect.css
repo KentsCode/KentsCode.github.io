@@ -1,0 +1,16 @@
+html {
+    height: 100%;
+    /* overflow: hidden; */
+
+}
+.parallax {
+    background-image: url('../images/meCutOut3.jpg');
+
+    height: 100%;
+
+    /* parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

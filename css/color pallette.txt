@@ -1,0 +1,3 @@
+red: FF6868
+light gray: 808080
+white: FFFFFF 
