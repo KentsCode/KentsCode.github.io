@@ -1,29 +1,76 @@
-(function($) {
-  "use strict"; // Start of use strict
+$(document).ready(function(){
+  // $(".owl-carousel").owlCarousel({
+  //   center: true,
 
-  // Smooth scrolling using jQuery easing
-  $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
-    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-      if (target.length) {
-        $('html, body').animate({
-          scrollTop: (target.offset().top - 54)
-        }, 1000, "easeInOutExpo");
-        return false;
+  //   //autoplay:true,
+  //   //autoplayTimeout:1000,
+  //   //loop:true,
+  //   //slideTransition: 'linear',
+  //   //autoplayTimeout: 0,
+  //   //autoplaySpeed: 5000
+  // });
+
+  var owl = $('.owl-carousel');
+  owl.owlCarousel({
+    center:true,
+      loop:true,
+      nav:true,
+      margin:10,
+      //stagePadding:10,
+      responsive:{
+          0:{
+              items:1
+          },
+          600:{
+              items:3
+          },            
+          960:{
+              items:4
+          },
+          1200:{
+              items:5
+          }
       }
-    }
+  });
+  owl.on('mousewheel', '.owl-stage', function (e) {
+      if (e.deltaY>0) {
+          owl.trigger('next.owl');
+      } else {
+          owl.trigger('prev.owl');
+      }
+      e.preventDefault();
   });
 
-  // Closes responsive menu when a scroll trigger link is clicked
-  $('.js-scroll-trigger').click(function() {
-    $('.navbar-collapse').collapse('hide');
-  });
 
-  // Activate scrollspy to add active class to navbar items on scroll
-  $('body').scrollspy({
-    target: '#mainNav',
-    offset: 54
-  });
+  //scrolling navigation code below to end of code
+  (function($) {
+    "use strict"; // Start of use strict
 
-})(jQuery); // End of use strict
+    // Smooth scrolling using jQuery easing
+    $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
+      if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+        if (target.length) {
+          $('html, body').animate({
+            scrollTop: (target.offset().top - 54)
+          }, 1000, "easeInOutExpo");
+          return false;
+        }
+      }
+    });
+
+    // Closes responsive menu when a scroll trigger link is clicked
+    $('.js-scroll-trigger').click(function() {
+      $('.navbar-collapse').collapse('hide');
+    });
+
+    // Activate scrollspy to add active class to navbar items on scroll
+    $('body').scrollspy({
+      target: '#mainNav',
+      offset: 54
+    });
+
+  })(jQuery); // End of use strict
+
+});

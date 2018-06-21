@@ -15,8 +15,14 @@
     <!-- Custom styles -->
     <link href="css/scrolling-nav.css" rel="stylesheet">
     <link href="css/parallax-effect.css" rel="stylesheet">
+    <link href="css/cube.css" rel="stylesheet">
     <!-- Font Awesome Icons CDN -->
     <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous" rel="stylesheet">
+    <!-- Dev Icons by Konpa -->
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+    <!-- Owl Carousel 2 -->
+    <link rel="stylesheet" href="vendor/owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="vendor/owlcarousel/owl.theme.default.min.css">
 
   </head>
 
@@ -35,12 +41,11 @@
               <a class="nav-link js-scroll-trigger" href="#about">What I Do</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#services">Portfolio</a>
+              <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#services">About Me</a>
-            </li>
-            <li class="nav-item">
+             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
             </li>
           </ul>
@@ -50,34 +55,33 @@
 
     <div class="parallax">
 
-      <header class="text-white">
-        <div class="container greeting text-center">
+      <header class="">
+        <div class="container greeting text-white text-center col-md-6 offset-md-3">
           <h1>I am Kenneth Prettman.</h1>
           <p class="lead">A web developer and technology professional.</p>
         </div>
       </header>
 
       <section id="about">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 mx-auto red-text">
-              <h2>The code to what I do</h2>
-              <p class="lead">const KennethPrettman = (design, create, build) => {return results};</p>
-              <!-- <ul>
-                <li>axios</li>
-                <li>  .get("ideas")</li>
-                <li>  .post("results")</li>
-                <li>  .update("mind with new technology")</li>
-                <li>  .delete("barriers")</li>
-              </ul>
-              <p class="lead">};</p> -->
-            </div>
-          </div>
+        <div class="container greeting text-white text-center col-md-6 offset-md-3">
+          <h2>Some of the Technologies I Use</h2>
+        </div> 
+
+        <div class="offset-lg-3 col-lg-6 owl-carousel owl-theme"> <!-- carousel is in this div -->
+          <div> <i class="fab fa-js carousel-icon"></i> <p>JavaScript</p> </div>
+          <div> <i class="fab fa-node-js carousel-icon"></i> <p>Node.js</p> </div>
+          <div> <i class="fab fa-react carousel-icon"></i> <p>React</p> </div>
+          <div> <i class="devicon-bootstrap-plain carousel-icon"></i> <p>Bootstrap</p> </div>
+          <div> <i class="devicon-git-plain carousel-icon"></i> <p>Git</p> </div>
+          <div> <i class="devicon-mongodb-plain carousel-icon"></i> <p>MongoDB</p> </div>
+          <div> <i class="devicon-express-original carousel-icon"></i> <p>Express</p> </div>
+          <div> <i class="devicon-heroku-plain carousel-icon"></i> <p>Heroku</p> </div>
+          <div> <i class="devicon-mysql-plain carousel-icon"></i> <p>MySQL</p> </div>
         </div>
       </section>
 
       <section id="services" class="bg-dark-gray">
-        <div class="container">
+        <div class="container offset-lg-1 col-lg-11">
           <div class="row">
             <div class="col-lg-8 mx-auto bottom-margin red-text">
               <h2>Projects I have worked on</h2>
@@ -85,7 +89,7 @@
           </div>
           <div class="row">
             <!-- Daily Special Card  Start-->
-            <div class="card" style="width: 25rem;">
+            <div class="card col-lg-3">
                 <img class="card-img-top" src="./images/dailySpecialLogo.png" alt="Card image cap">
                 <div class="card-body">
                   <h5 class="card-title">DailySpecial</h5>
@@ -105,16 +109,16 @@
             </div>
             <!-- Daily Special Card End-->
             <!-- GetItOrShipIt Card Start -->
-            <div class="card" style="width: 25rem;">
+            <div class="card col-lg-3 offset-lg-1">
                 <img class="card-img-top" src="./images/getItOrShipItLogo.png" alt="Card image cap">
                 <div class="card-body">
                   <h5 class="card-title">GetItOrShipIt</h5>
                   <p class="card-text">Get the full picture of your shopping experience by comparing an online retailer with a brick and mortar store. Includes map and aproximate drive time plus prices.</p>
                 </div>
                 <ul class="list-group list-group-flush">
-                  <li class="list-group-item">Html Javascript JQuery</li>
+                  <li class="list-group-item">Utilizes Html Javascript JQuery Bootstrap and external APIs</li>
                   
-                  <li class="list-group-item">Role: Back End Developer</li>
+                  <li class="list-group-item">Role: Front End Javascript Developer</li>
                 </ul>
                 <div class="card-body">
                   <a href="#" class="card-link">Technical Details</a>
@@ -122,8 +126,29 @@
                   
                   <!-- add a modal for further explanation -->
                 </div>
-                <!-- GetItOrShipIt Card End -->
+                
             </div>
+            <!-- GetItOrShipIt Card End -->
+            <!-- Portfolio Card Start -->
+            <div class="card col-lg-3 offset-lg-1">
+                <img class="card-img-top" src="./images/portfolioPlaceholder.png" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Portfolio Page</h5>
+                  <p class="card-text">Showcasing my front-end design skills and representing myself on the web.</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Built with Html Javascript JQuery and Bootstrap</li>
+                  
+                  <li class="list-group-item">Role: Front End Javascript Developer</li>
+                </ul>
+                <div class="card-body">
+                  <a href="#" class="card-link">Technical Details</a>
+                  <a href="http://kentscode.github.io.com/" class="card-link">Visit Site</a>
+                  
+                  <!-- add a modal for further explanation -->
+                </div>
+            </div>
+            <!-- Portfolio Card End -->
           </div>
         </div>
       </section>
@@ -131,7 +156,7 @@
       <section id="contact">
         <div class="container">
           <div class="row">
-            <div class="col-lg-8 mx-auto red-text">
+            <div class="col-lg-8 mx-auto">
               <h2 class="underline">Contact Me:</h2>
               
               <p><i class="far fa-envelope"></i>  email: kentmbox42@gmail.com</p>
@@ -179,7 +204,10 @@
 
     <!-- Plugin JavaScript -->
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
+    <!-- Jquery Mousewheel plugin used by Owl Carousel -->
+    <script src="vendor/jquery/jquery.mousewheel.min.js"></script>
+    <!-- Owl Carousel 2 JavaScript -->
+    <script src="vendor/owlcarousel/owl.carousel.min.js"></script>
     <!-- Custom JavaScript for this theme -->
     <script src="js/scrolling-nav.js"></script>
 

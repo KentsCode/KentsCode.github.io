@@ -29,11 +29,15 @@ li {
   margin-bottom: 25px;
 }
 .greeting {
-  background-color: #FF6868;
+  background-color: #68AFFF;
 }
 .bg-dark-gray {
   background-color: #343A40;
 }
 .red-text {
   color: #FF6868;
+}
+.carousel-icon {
+  font-size: 100px;
+  color: #68AFFF;
 }
