@@ -38,14 +38,15 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#about">What I Do</a>
+              <a class="nav-link js-scroll-trigger" href="#about">About Me</a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#what">What I do</a>
+              </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#services">About Me</a>
-             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
             </li>
           </ul>
@@ -55,32 +56,38 @@
 
     <div class="parallax">
 
-      <header class="">
-        <div class="container greeting text-white text-center col-md-6 offset-md-3">
-          <h1>I am Kenneth Prettman.</h1>
-          <p class="lead">A web developer and technology professional.</p>
-        </div>
-      </header>
-
       <section id="about">
+          <div class="container greeting text-white text-center col-md-6 offset-md-3">
+            <h1>I am Kenneth Prettman.</h1>
+            <p class="lead">A web developer and technology professional.</p>
+          </div>
+          <!-- <div class="container greeting text-white text-center col-md-6 offset-md-3" id="about-me">
+            <h5>I write code and create websites. My main asset is my ability to solve problems.
+              After 11 years as an electronics technician solving problems in the power supply, 
+              lighting, CNC and automation industries I now seek to develop the internet through code.
+            </h5>
+          </div> -->
+      </section>
+
+      <section id="what">
         <div class="container greeting text-white text-center col-md-6 offset-md-3">
           <h2>Some of the Technologies I Use</h2>
         </div> 
 
-        <div class="offset-lg-3 col-lg-6 owl-carousel owl-theme"> <!-- carousel is in this div -->
-          <div> <i class="fab fa-js carousel-icon"></i> <p>JavaScript</p> </div>
-          <div> <i class="fab fa-node-js carousel-icon"></i> <p>Node.js</p> </div>
+        <div class="offset-lg-3 col-lg-6 text-white text-center owl-carousel owl-theme"> <!-- carousel is in this div -->
+          <div> <i class="devicon-express-original carousel-icon"></i> <p>Express</p> </div>
           <div> <i class="fab fa-react carousel-icon"></i> <p>React</p> </div>
+          <div> <i class="fab fa-node-js carousel-icon"></i> <p>Node.js</p> </div>
           <div> <i class="devicon-bootstrap-plain carousel-icon"></i> <p>Bootstrap</p> </div>
           <div> <i class="devicon-git-plain carousel-icon"></i> <p>Git</p> </div>
-          <div> <i class="devicon-mongodb-plain carousel-icon"></i> <p>MongoDB</p> </div>
-          <div> <i class="devicon-express-original carousel-icon"></i> <p>Express</p> </div>
           <div> <i class="devicon-heroku-plain carousel-icon"></i> <p>Heroku</p> </div>
           <div> <i class="devicon-mysql-plain carousel-icon"></i> <p>MySQL</p> </div>
+          <div> <i class="fab fa-js carousel-icon"></i> <p>JavaScript</p> </div>
+          <div> <i class="devicon-mongodb-plain carousel-icon"></i> <p>MongoDB</p> </div>
         </div>
       </section>
 
-      <section id="services" class="bg-dark-gray">
+      <section id="portfolio" class="bg-dark-gray">
         <div class="container offset-lg-1 col-lg-11">
           <div class="row">
             <div class="col-lg-8 mx-auto bottom-margin red-text">
@@ -154,15 +161,15 @@
       </section>
 
       <section id="contact">
-        <div class="container">
+        <div class="container text-white greeting col-md-7">
           <div class="row">
             <div class="col-lg-8 mx-auto">
               <h2 class="underline">Contact Me:</h2>
               
               <p><i class="far fa-envelope"></i>  email: kentmbox42@gmail.com</p>
               <p><i class="fas fa-phone"></i>  phone: </p>
-              <p>github Link</p> <a href="https://github.com/KentsCode"><i class="fab fa-github-square"></i></a>
-              <p>Linked In</p> <a href="https://www.linkedin.com/KennethPrettman"><i class="fab fa-linkedin"></i></a>
+              <p><a href="https://github.com/KentsCode"><i class="fab fa-github-square"></i></a> Github Link</p> 
+              <p><a href="https://www.linkedin.com/KennethPrettman"><i class="fab fa-linkedin"></i></a> Linked In</p> 
               <p>StackOverflow</p>        
 
               <form>

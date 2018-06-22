@@ -4,10 +4,6 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-scrolling-nav/blob/master/LICENSE)
  */
 
-header {
-  padding: 154px 0 100px;
-}
-
 @media (min-width: 992px) {
   header {
     padding: 156px 0 100px;
@@ -40,4 +36,9 @@ li {
 .carousel-icon {
   font-size: 100px;
   color: #68AFFF;
+}
+#about-me {
+  margin-top: 10%;
+  background-color: #FF6868;
+  padding: 1%;
 }
