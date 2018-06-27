@@ -13,6 +13,14 @@
 section {
   padding: 150px 0;
 }
+#contact {
+  padding: 0;
+  
+}
+#bottom-stack {
+  height: 45rem;
+  padding: 5%;
+}
 
 li {
   list-style-type: none;
@@ -35,10 +43,20 @@ li {
 }
 .carousel-icon {
   font-size: 100px;
-  color: #68AFFF;
+  color: #FF6868;
 }
 #about-me {
-  margin-top: 10%;
-  background-color: #FF6868;
+  margin-top: 5%;
+  margin-bottom: 6%;
   padding: 1%;
+}
+#kwp-logo {
+  height: 4.5rem;
+  margin-right: 2.5rem;
+}
+#i-am {
+  margin-top: 10rem;
+}
+#top-stack {
+  height: 50rem;
 }

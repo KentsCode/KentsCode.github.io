@@ -1,4 +1,5 @@
 red: FF6868
 light gray: 808080
+dark gray: 343A40
 white: FFFFFF 
 blue: 68AFFF

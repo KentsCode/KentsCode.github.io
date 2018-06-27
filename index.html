@@ -31,6 +31,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
       <div class="container">
+          <img src="images\KWPlogWhite.png" alt="KWP logo" id="kwp-logo">
         <a class="navbar-brand js-scroll-trigger" href="#page-top">Kenneth Prettman</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -40,9 +41,6 @@
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#about">About Me</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="#what">What I do</a>
-              </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
             </li>
@@ -61,29 +59,25 @@
             <h1>I am Kenneth Prettman.</h1>
             <p class="lead">A web developer and technology professional.</p>
           </div>
-          <!-- <div class="container greeting text-white text-center col-md-6 offset-md-3" id="about-me">
-            <h5>I write code and create websites. My main asset is my ability to solve problems.
-              After 11 years as an electronics technician solving problems in the power supply, 
-              lighting, CNC and automation industries I now seek to develop the internet through code.
-            </h5>
-          </div> -->
-      </section>
+          <div class="container greeting text-white text-center col-md-6 offset-md-3" id="about-me">
+            <h5>A problem solver and troubleshooter. <br>I use technology to provide solutions.</h5>
+          </div>
 
-      <section id="what">
-        <div class="container greeting text-white text-center col-md-6 offset-md-3">
+        <div class="container greeting text-white bg-dark-gray text-center col-md-6 offset-md-3">
           <h2>Some of the Technologies I Use</h2>
-        </div> 
+         
 
-        <div class="offset-lg-3 col-lg-6 text-white text-center owl-carousel owl-theme"> <!-- carousel is in this div -->
-          <div> <i class="devicon-express-original carousel-icon"></i> <p>Express</p> </div>
-          <div> <i class="fab fa-react carousel-icon"></i> <p>React</p> </div>
-          <div> <i class="fab fa-node-js carousel-icon"></i> <p>Node.js</p> </div>
-          <div> <i class="devicon-bootstrap-plain carousel-icon"></i> <p>Bootstrap</p> </div>
-          <div> <i class="devicon-git-plain carousel-icon"></i> <p>Git</p> </div>
-          <div> <i class="devicon-heroku-plain carousel-icon"></i> <p>Heroku</p> </div>
-          <div> <i class="devicon-mysql-plain carousel-icon"></i> <p>MySQL</p> </div>
-          <div> <i class="fab fa-js carousel-icon"></i> <p>JavaScript</p> </div>
-          <div> <i class="devicon-mongodb-plain carousel-icon"></i> <p>MongoDB</p> </div>
+          <div class="text-center owl-carousel owl-theme"> <!-- carousel is in this div -->
+            <div> <i class="devicon-express-original carousel-icon"></i> <p>Express</p> </div>
+            <div> <i class="fab fa-react carousel-icon"></i> <p>React</p> </div>
+            <div> <i class="fab fa-node-js carousel-icon"></i> <p>Node.js</p> </div>
+            <div> <i class="devicon-bootstrap-plain carousel-icon"></i> <p>Bootstrap</p> </div>
+            <div> <i class="devicon-git-plain carousel-icon"></i> <p>Git</p> </div>
+            <div> <i class="devicon-heroku-plain carousel-icon"></i> <p>Heroku</p> </div>
+            <div> <i class="devicon-mysql-plain carousel-icon"></i> <p>MySQL</p> </div>
+            <div> <i class="fab fa-js carousel-icon"></i> <p>JavaScript</p> </div>
+            <div> <i class="devicon-mongodb-plain carousel-icon"></i> <p>MongoDB</p> </div>
+          </div>
         </div>
       </section>
 
@@ -161,7 +155,8 @@
       </section>
 
       <section id="contact">
-        <div class="container text-white greeting col-md-7">
+        <div class="row">
+        <div class="container text-white greeting col-md-7 no-gutters" id="bottom-stack">
           <div class="row">
             <div class="col-lg-8 mx-auto">
               <h2 class="underline">Contact Me:</h2>
@@ -190,7 +185,12 @@
               </form>
               <p class="lead"></p>
             </div>
+            
           </div>
+        </div>
+        <div class="col-md-3">
+          <!-- bootstrap placeholder -->
+        </div>
         </div>
       </section>
     </div>
