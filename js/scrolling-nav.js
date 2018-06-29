@@ -1,14 +1,4 @@
 $(document).ready(function(){
-  // $(".owl-carousel").owlCarousel({
-  //   center: true,
-
-  //   //autoplay:true,
-  //   //autoplayTimeout:1000,
-  //   //loop:true,
-  //   //slideTransition: 'linear',
-  //   //autoplayTimeout: 0,
-  //   //autoplaySpeed: 5000
-  // });
 
   var owl = $('.owl-carousel');
   owl.owlCarousel({
@@ -68,7 +58,7 @@ $(document).ready(function(){
     // Activate scrollspy to add active class to navbar items on scroll
     $('body').scrollspy({
       target: '#mainNav',
-      offset: 54
+      offset: 200
     });
 
   })(jQuery); // End of use strict
