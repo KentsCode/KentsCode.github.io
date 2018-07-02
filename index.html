@@ -2,14 +2,11 @@
 <html lang="en">
 
   <head>
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Web Developer Profile">
     <meta name="author" content="Kent Prettman">
-
     <title>Kenneth Prettman - Web Developer</title>
-
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom styles -->
@@ -23,11 +20,9 @@
     <!-- Owl Carousel 2 -->
     <link rel="stylesheet" href="vendor/owlcarousel/owl.carousel.min.css">
     <link rel="stylesheet" href="vendor/owlcarousel/owl.theme.default.min.css">
-
   </head>
 
   <body id="page-top">
-
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
       <div class="container">
@@ -51,9 +46,7 @@
         </div>
       </div>
     </nav>
-
     <div class="parallax">
-
       <section id="about">
         <div class="container border-top-left col-md-6 offset-md-3">
           <div class="greeting text-white text-center">
@@ -69,8 +62,6 @@
         <div class="container border-bottom-right col-md-6 offset-md-3">
           <div class="greeting text-white bg-dark-gray text-center">
           <h2>Some of the Technologies I Use</h2>
-         
-
           <div class="text-center owl-carousel owl-theme"> <!-- carousel is in this div -->
             <div> <i class="devicon-express-original carousel-icon"></i> <p>Express</p> </div>
             <div> <i class="fab fa-react carousel-icon"></i> <p>React</p> </div>
@@ -96,66 +87,168 @@
             </div>
           </div>
           <div class="row">
-            <!-- Daily Special Card  Start-->
+            <!-- Daily Special Card Start-->
             <div class="card col-lg-3">
-                <img class="card-img-top" src="./images/dailySpecialLogo.png" alt="Card image cap">
-                <div class="card-body">
-                  <h5 class="card-title">DailySpecial</h5>
-                  <p class="card-text">Find what's on special at restaurants and bars near you all in one simple search.</p>
+              <img class="card-img-top" src="./images/dailySpecialLogo.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">DailySpecial</h5>
+                <p class="card-text">Find what's on special at restaurants and bars near you all in one simple search.</p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Built on the MERN Stack with Auth0 login</li>
+                <li class="list-group-item">Sole Developer, Front and Back End</li>
+              </ul>
+              <div class="card-body">
+                <!-- these buttons trigger modals and "visit site" also starts redirect timer -->
+                <button type="button" class="btn btn-primary mt-1" data-toggle="modal" data-target="#dailySpecialModal">
+                  Details
+                </button>
+                <button 
+                  data-url="https://desolate-fjord-64516.herokuapp.com/home" class="btn btn-primary redirectButton mt-1" 
+                  data-toggle="modal" data-target="#dailySpecialRedirectModal">Visit Site
+                </button>
+                <a class="btn btn-primary mt-1" href="https://github.com/KentsCode/dailySpecial">View Code on Github</a>
+              </div>
+              <!-- Daily Special Modal Start -->
+              <div class="modal fade" id="dailySpecialModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Daily Special</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <h4 class="underline">Description</h4>
+                      <p>Daily Special is a web application that allows customers to find the best specials in their area. Restaurants and bars have the ability to create a login and create new specials or delete specials. The login is handled through Auth0 and tied into their browser through a token for identification. </p>
+                      <br>
+                      <p>The database uses two collections to store data. One collection to store restaurant information such as an id, name, address and the token that ties them to their Auth0 login. The other collection contains an entry for all the specials. </p>
+                      <br>
+                      <h4 class="underline">To Test</h4>
+                      <p>The application linked is a demo and only has sample entries so only a few zip codes will show results. 60016 and 60195 currently have entries for every day of the week. To test the full app please feel free to create an account with the “venue login” button and create as many entries as you would like.</p>                            
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      <button data-url="https://desolate-fjord-64516.herokuapp.com/home" class="btn btn-primary card-link redirectButton">Visit Site</button>
+                      <a class="btn btn-primary" href="https://github.com/KentsCode/dailySpecial">View Code on Github</a>
+                    <!-- fix this button up above -->
+                    </div>
+                  </div>
                 </div>
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item">Built on the MERN Stack with Auth0 login</li>
-                  
-                  <li class="list-group-item">Sole Developer, Front and Back End</li>
-                </ul>
-                <div class="card-body">
-                  <a href="#" class="card-link">Technical Details</a>
-                  <a href="https://desolate-fjord-64516.herokuapp.com/home" class="card-link">Visit Site</a>
-                  
-                  <!-- add a modal for further explanation -->
+              </div>
+              <!-- Daily Special Redirect Modal -->
+              <div class="modal" id="dailySpecialRedirectModal" tabindex="-1" role="dialog">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title">Test Notes:</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>The application linked is a demo and only has sample entries so only a few zip codes will show results. </p>
+                        <p>60016 and 60195 currently have entries for every day of the week. </p>
+                        <p>To test the full app please feel free to create an account with the “venue login” button and create as many entries as you would like.</p>
+                    <br>
+                      <p>Redirecting in <span id="count">10</span> seconds...</p> 
+                    </div>
+                    <div class="modal-footer">
+                      <a href="https://desolate-fjord-64516.herokuapp.com/home" class="btn btn-primary">Click to redirect now</a>
+                      <button type="button" class="btn btn-secondary timerStop" data-dismiss="modal">Stay Here</button>
+                    </div>
+                  </div>
                 </div>
+              </div>
             </div>
             <!-- Daily Special Card End-->
             <!-- GetItOrShipIt Card Start -->
             <div class="card col-lg-3 offset-lg-1">
-                <img class="card-img-top" src="./images/getItOrShipItLogo.png" alt="Card image cap">
-                <div class="card-body">
-                  <h5 class="card-title">GetItOrShipIt</h5>
-                  <p class="card-text">Get the full picture of your shopping experience by comparing an online retailer with a brick and mortar store. Includes map and aproximate drive time plus prices.</p>
+              <img class="card-img-top" src="./images/getItOrShipItLogo.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">GetItOrShipIt</h5>
+                <p class="card-text">Get the full picture of your shopping experience by comparing an online retailer with a brick and mortar store. Includes map and aproximate drive time plus prices.</p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Utilizes Html Javascript JQuery Bootstrap and external APIs</li>
+                <li class="list-group-item">Role: Front End Javascript Developer</li>
+              </ul>
+              <div class="card-body">
+                <button type="button" class="btn btn-primary mt-1" data-toggle="modal" data-target="#getItorShipItModal">
+                  Details
+                </button>
+                <a class="btn btn-primary mt-1" href="http://quintessacanderson.com/">Visit Site</a>
+                <a class="btn btn-primary mt-1" href="https://github.com/KentsCode/GetItorShipIt">View Code on Github</a>
+              </div>
+              <!-- GetItOrShipIt Modal Start -->
+              <div class="modal fade" id="getItorShipItModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Get It Or Ship It</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <h4 class="underline">Description</h4>
+                      <p>Get It Or Ship It is a web application that allows you to compare an online retailer with a brick and mortar retailer and gives you the full picture of your shopping experiences. It compares not only the cost of the item but also shipping price and drive time.</p>
+                      <p>This application utilizes 3rd party APIs from Ebay and Wal-Mart to get product data, prices and the location of the nearest Wal-Mart with AJAX calls. An additional AJAX call is made to the Google Maps API for driving distance and directions. The site was built with with JQuery and Bootstrap, in addition to Javascript, HTML and CSS. </p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      <a class="btn btn-primary" href="http://quintessacanderson.com/">Visit Site</a>
+                      <a class="btn btn-primary" href="https://github.com/KentsCode/GetItorShipIt">View Code on Github</a>
+                    </div>
+                  </div>
                 </div>
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item">Utilizes Html Javascript JQuery Bootstrap and external APIs</li>
-                  
-                  <li class="list-group-item">Role: Front End Javascript Developer</li>
-                </ul>
-                <div class="card-body">
-                  <a href="#" class="card-link">Technical Details</a>
-                  <a href="http://quintessacanderson.com/" class="card-link">Visit Site</a>
-                  
-                  <!-- add a modal for further explanation -->
-                </div>
-                
+              </div> 
+              <!-- GetItOrShipIt Modal End -->
             </div>
             <!-- GetItOrShipIt Card End -->
             <!-- Portfolio Card Start -->
             <div class="card col-lg-3 offset-lg-1">
-                <img class="card-img-top" src="./images/portfolioPlaceholder.png" alt="Card image cap">
-                <div class="card-body">
-                  <h5 class="card-title">Portfolio Page</h5>
-                  <p class="card-text">Showcasing my front-end design skills and representing myself on the web.</p>
+              <img class="card-img-top" src="./images/portfolioPlaceholder.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Portfolio Page</h5>
+                <p class="card-text">Showcasing my front-end design skills and representing myself on the web.</p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Built with Html Javascript JQuery and Bootstrap</li>
+                
+                <li class="list-group-item">Role: Front End Developer and Designer</li>
+              </ul>
+              <div class="card-body">
+                <button type="button" class="btn btn-primary mt-1" data-toggle="modal" data-target="#portfolioModal">
+                  Details
+                </button>
+                <a class="btn btn-primary mt-1" href="https://github.com/KentsCode/KentsCode.github.io">View Code on Github</a>
+              </div>
+              <!-- Portfolio Modal Start -->
+              <div class="modal fade" id="portfolioModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Profile Page</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <h4 class="underline">Description</h4>
+                      <p>This webpage was designed to showcase projects I have worked on. </p>
+                      <p>This site was built with with HTML, CSS, Javascript, JQuery and Bootstrap, in addition to Javascript, HTML and CSS. I also integrated a plugin called Owl Carousel.</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      <a class="btn btn-primary" href="https://github.com/KentsCode/KentsCode.github.io">View Code on Github</a>
+                    </div>
+                  </div>
                 </div>
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item">Built with Html Javascript JQuery and Bootstrap</li>
-                  
-                  <li class="list-group-item">Role: Front End Javascript Developer</li>
-                </ul>
-                <div class="card-body">
-                  <a href="#" class="card-link">Technical Details</a>
-                  <a href="http://kentscode.github.io.com/" class="card-link">Visit Site</a>
-                  
-                  <!-- add a modal for further explanation -->
-                </div>
+              </div>
             </div>
+            <!-- Portfolio Modal End -->
             <!-- Portfolio Card End -->
           </div>
         </div>
@@ -209,19 +302,17 @@
       <!-- /.container -->
     </footer>
 
-    <!-- Bootstrap core JavaScript -->
+    <!-- Jquery and Jquery easing for slider -->
     <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-    <!-- Plugin JavaScript -->
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
     <!-- Jquery Mousewheel plugin used by Owl Carousel -->
     <script src="vendor/jquery/jquery.mousewheel.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <!-- Owl Carousel 2 JavaScript -->
     <script src="vendor/owlcarousel/owl.carousel.min.js"></script>
-    <!-- Custom JavaScript for this theme -->
+    <!-- Custom JavaScript for this website -->
     <script src="js/scrolling-nav.js"></script>
-
   </body>
 
 </html>

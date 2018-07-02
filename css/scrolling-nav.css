@@ -29,10 +29,6 @@ section {
 li {
   list-style-type: none;
 }
-#message-box {
-  /* height: 200px;
-  resize: none; */
-}
 .greeting {
   background-color: #343A40;
 }
@@ -81,4 +77,7 @@ li {
 }
 .bottom-margin {
   margin-bottom: 5%;
+}
+h4 {
+  font-weight: bold;
 }

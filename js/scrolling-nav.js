@@ -31,11 +31,8 @@ $(document).ready(function(){
       e.preventDefault();
   });
 
-
-  //scrolling navigation code below to end of code
+  //scrolling navigation code
   (function($) {
-    "use strict"; // Start of use strict
-
     // Smooth scrolling using jQuery easing
     $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
       if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
@@ -49,18 +46,37 @@ $(document).ready(function(){
         }
       }
     });
-
     // Closes responsive menu when a scroll trigger link is clicked
     $('.js-scroll-trigger').click(function() {
       $('.navbar-collapse').collapse('hide');
     });
-
     // Activate scrollspy to add active class to navbar items on scroll
     $('body').scrollspy({
       target: '#mainNav',
       offset: 200
     });
-
   })(jQuery); // End of use strict
 
+
+  // Redirect timer on button click
+  $(".redirectButton").on("click", function(){
+    var redirectURL = $(this).attr("data-url");
+    var counter = 10;
+    var interval = setInterval(function() {
+      counter--;
+      $("#count").text(counter);
+      console.log(counter);
+      if (counter == 0) {
+        window.location.href = redirectURL;
+        clearInterval(interval);
+      }
+    }, 1000);
+
+  $(".timerStop").on("click", function(){
+    clearInterval(interval);
+  })
+
+
+
+  });
 });
