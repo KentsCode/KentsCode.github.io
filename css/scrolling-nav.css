@@ -81,3 +81,17 @@ li {
 h4 {
   font-weight: bold;
 }
+.contact-text {
+  color: #343A40;
+}
+a.contact-text:hover {
+  color: white;
+}
+#contact-submit {
+  background-color: #343A40;
+  color: white;
+}
+#contact-submit:hover {
+  background-color: white;
+  color: #343A40;
+}
