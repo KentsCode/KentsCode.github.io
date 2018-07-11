@@ -13,3 +13,9 @@ I would like to incorporate my Google calendar (or other calendar app) into this
 
 Make the carousel in the top section 3D. This would be built from scratch instead of using the Owl Carousel plugin.
 
+### Author
+Kenneth Prettman
+[LinkedIn](https://www.linkedin.com/in/kenneth-prettman/)
+
+
+
