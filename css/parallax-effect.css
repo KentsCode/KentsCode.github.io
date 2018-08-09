@@ -14,13 +14,19 @@ html {
     background-repeat: no-repeat;
     background-size: cover;
 }
-@media screen and (max-width: 969px) {
+@media screen and (min-width: 1400px) and (max-width: 1996px) {
+    .parallax {
+        background-image: url('../images/background.jpg');
+    }
+}
+@media screen and (min-width: 975px) and (max-width: 1400px) {
     .parallax {
         background-image: url('../images/background2.jpg');
     }
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 975px) {
     .parallax {
-        background-image: url('../images/background2.jpg');
+        background-image: none;
+        background-color: #808080;
     }
 }
