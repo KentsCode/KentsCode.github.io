@@ -1,5 +1,6 @@
 $(document).ready(function(){
 
+  //owl carousel configuration 
   var owl = $('.owl-carousel');
   owl.owlCarousel({
     center:true,
